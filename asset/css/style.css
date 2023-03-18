@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+Bamum&display=swap');
+/* font-family: 'Anton', sans-serif;
+font-family: 'Noto Sans Bamum', sans-serif; */
+
+  *{
+    font-family: 'Anton' , sans-serif;
+  }
+  :root{
+    --bg-navbar:#5495df;
+    --textbrand:rgb(255, 100, 10);
+    --ajay:rgba(175, 3, 255, 0.533);
+    --merah:#ff0000;
+    --ijo:#00ff15;
+    --birubanget:#0000d4;
+    
+    
+  }
+
+
+  /* NAVBAR */
+  .navbar{
+    background: var(--bg-navbar);
+
+  }
+  .navbar .navbar-brand{
+    color: var(--textbrand);
+    font-size: 20px;
+    font-weight: 700px;
+
+  }
+  .navbar .navbar-brand span{
+    color:var(--ajay);
+
+  }
+
+  a.btn-second{
+    padding: 12px 24px;
+    color: var(--textbrand);
+    border-radius:8px;
+    border: 1px solid var(--textbrand);
+   
+
+  }
+
+  a.btn-second:hover{
+    background: var(--textbrand);
+    color: #000;
+  }
+
+  a.btn-first{
+    padding: 12px 24px;
+    color: rgb(9, 155, 14) ;
+    border-radius:8px;
+    border: 1px solid var(--textbrand);
+    background: var(--textbrand);
+
+  }
+
+  a.btn-first:hover{
+    background: var(--textbrand);
+    color: #fff;
+
+
+  }
+
+  .navbar .nav-item i{
+    font-size: 30px;
+  }
+
+  .navbar .input-group{
+    width: 50%;
+  }
+
+  /* atur responsif */
+
+  @media (max-width:960px){
+.navbar .input-group{
+    width: 100%;
+}
+  }
+
+  /* menu wrapperr */
+  .menu-wrapper{
+    margin-top:100px ;
+  }
+  
+  .menu-wrapper a{
+    margin: 0 20px;
+  }
+
+  /* corocel */
+  .header{
+    margin-top: 180px;
+  }
+
+  /* .header .carousel-inner,.carousel-item img{
+    width: 200px;
+  } */
+
+  @media (max-width:820px) {
+    .header{
+      margin-top: 100px;
+  }
+  }
+  .populer{
+    margin-top: 100px;
+  }
+  /*  */
+  .populer .title,.price{
+    color: var(--textbrand);
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+
+  /* @media (max-width:576px){
+    .populer .title,.price{
+      font-size: 15px;
+    }
+  } */
+
+
+
+  .populer .reting i{
+    font-size: 20px;
+    color: rgb(255, 225, 0);
+  }
+
+  .populer .btn-cart{
+    padding: 8px 10px;
+    background-color: var(--ajay);
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  /* @media (max-width:576){
+    .populer .btn-cart{
+      padding:5px 5px;
+    }
+  } */
+  .populer .btn-cart:hover {
+background-color: var(--textbrand);
+transition: 1s;
+  }
+
+  .populer .btn-cart i{
+    font-size: 20px;
+  }
+
+
+
+/* ini subscribe */
+
+.subscribe{
+  margin-top: 100px;
+}
+
+.subscribe .container{
+  background-image: url(../img/anjay.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+}
+
+.subscribe .container .col-sub{
+  padding: 120px;
+  color: #fff;
+}
+
+.testimonial{
+  margin-top: 100px;
+}
+
+.testimonial .card{
+  border:2px solid var(--textbrand);
+  border-radius: 10px;
+  position: relative;
+}
+
+.testimonial .card img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.testimonial .card i{
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  font-size: 70px;
+  color: var(--ajay);
+}
+
+/* footer */
+footer{
+  margin-top: 100px;
+  background-color: var(--ijo);
+}
+
+footer .row-content,h1.logo-brand{
+  color: var(--merah);
+  font-size: 30px;
+}
+
+footer .row-content,h1.logo-brand span{
+  color:var(--bg-navbar)
+}
+
+footer .row-content,.logo-brand h3{
+  font-size: 15px;
+  color: var(--merah);
+}
+
+
+footer .row-content ul{
+  list-style: none;
+}
+
+footer .row-copy i{
+  font-size: 25px;
+  color: var(--birubanget);
+}
+
+
+
+
+
+  @media screen and (max-width:576px){
+    .populer .btn-cart i{
+      font-size: 15px;
+    }
+
+    .populer .btn-cart{
+      padding:5px 5px;
+    }
+
+    .populer .title,.price{
+      font-size: 15px;
+    }
+  }
